@@ -7,12 +7,6 @@ const AWS = require('aws-sdk');
 import Item from '../../model/item-model';
 
 
-const s3 = new AWS.S3({
-  accessKeyId: 'AKIAIDUWRZKMX74C5VLA',
-  secretAccessKey: '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'
-});
-
-
 
 const uploadS3 = multer({
 storage: multers3({
